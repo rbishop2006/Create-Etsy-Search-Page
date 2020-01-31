@@ -6,3 +6,104 @@ html {
 *::after {
   box-sizing: inherent;
 }
+.wrapper1 {
+  width: 1300px;
+  margin: auto;
+}
+.wrapper2 {
+  width: 1300px;
+  margin: auto;
+}
+header {
+  display: grid;
+  grid-template-columns: 80px 8fr 1fr 1fr;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.searchTop {
+  border: 1px solid rgb(194 194 194);
+  border-radius: 35px;
+  padding-left: 22px;
+}
+::placeholder {
+  font-size: 1.5em;
+  color: black;
+}
+#etsyLogo {
+  justify-self: start;
+  font-size: 2.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgb(236, 86, 39);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+}
+header > p {
+  font-family: Helvetica, arial;
+  justify-self: end;
+  align-self: center;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+#cart {
+  justify-self: end;
+  align-self: center;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+}
+.navBar a {
+  color: black;
+  text-decoration: none;
+}
+.borderLine {
+  border-bottom: 2px solid gray;
+  opacity: 0.3;
+  width: 100%;
+}
+.gift {
+  height: 15px;
+  width: 15px;
+}
+.similarItems {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 35px;
+}
+.similarItems a {
+  color: black;
+  text-decoration: none;
+  background-color: rgb(256, 146, 111);
+  padding: 10px 19px 10px 19px;
+  border-radius: 35px;
+  font-size: 0.9em;
+}
+.flexParent {
+  display: flex;
+}
+.sideBar {
+  width: 200px;
+  border: 1px solid black;
+}
+.allCats li {
+  color: black;
+  list-style-type: none;
+}
+.toBuy {
+  flex-grow: 2;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.icon {
+  display: inline-block;
+  fill: black;
+  width: 20px;
+  height: 20px;
+}
