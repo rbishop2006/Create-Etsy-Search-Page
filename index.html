@@ -48,185 +48,453 @@
       </ul>
       <div class="flexParent">
         <div class="sideBar">
-      <div class="allCats">
-        All categories
-        <ul>
-          <li>Home & Living</li><br/>
-          <li>Art & Collectibles</li><br/>
-          <li>Clothing</li><br/>
-          <li>Weddings</li>
-          </ul>
-        </div>
-        <div>Show More</div></br>
-        <div>Special Offers
-          <ul>
-            <li>FREE shipping</li>
-            <li>On Sale</li>
-          </ul><br/>
-          <div>Ready to ship in
+          <div class="allCats">
+            All categories
             <ul>
-              <li>1 business day</li>
-              <li>1-3 business</li>
+              <li>Home & Living</li>
+              <li>Art & Collectibles</li>
+              <li>Clothing</li>
+              <li>Weddings</li>
             </ul>
+          </div>
+          <div class="showMore"><span>+</span> Show More</div>
+          <br>
+          <div>
+            Special Offers
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="freeShipping"
+                  value="shipping"
+                />Free Shipping
+              </li>
+              <li>
+                <input type="checkbox" name="onSale" value="saleShipping" />On
+                sale
+              </li>
+            </ul>
+          </div>
+          <br>
+          <div>
+            Ready to ship in
+            <ul>
+              <li>
+                <input type="checkbox" name="oneBusDay" value="busDay" />1
+                business day
+              </li>
+              <li>
+                <input type="checkbox" name="oneToThree" value="busDay" />1 - 3
+                business days
+              </li>
+            </ul>
+          </div>
+          <br>
+          <div>
+            Price ($)
+            <ul>
+              <li>
+                <input type="radio" name="anyPrice" value="price" />Any price
+              </li>
+              <li>
+                <input type="radio" name="under25" value="price" />Under $25
+              </li>
+              <li>
+                <input type="radio" name="twenty5to75" value="price" />$25 to
+                $75
+              </li>
+              <li>
+                <input type="radio" name="seventy5to100" value="price" />$75 to
+                $100
+              </li>
+              <li>
+                <input type="radio" name="over100" value="price" />Over $100
+              </li>
+              <li>
+                <input type="radio" name="customPrice" value="price" />Custom
+              </li>
+            </ul>
+          </div>
+          <div class="priceRange">
+            <input type="text" placeholder="Low" />
+            <p>to</p>
+              <input type="text" placeholder="High" /><span>></span>
+          </div>
+<br>
+          <div>
+            Material
+            <ul>
+              <li>
+                <input type="checkbox" name="ceramic" value="material" />Ceramic
+              </li>
+              <li>
+                <input type="checkbox" name="cork" value="material" />Cork
+              </li>
+              <li>
+                <input type="checkbox" name="fabric" value="material" />Fabric
+              </li>
+              <li>
+                <input type="checkbox" name="glass" value="material" />Glass
+              </li>
+              <li>
+                <input type="checkbox" name="metal" value="material" />Metal
+              </li>
+            </ul>
+          </div>
+          <div class="showMore"><span>+</span> Show More</div>
+          <br>
+          <div>
+            Color
+            <ul>
+              <li><input type="checkbox" name="beige" value="color" />Beige</li>
+              <li><input type="checkbox" name="black" value="color" />Black</li>
+              <li><input type="checkbox" name="blue" value="color" />Blue</li>
+              <li>
+                <input type="checkbox" name="bronze" value="color" />Bronze
+              </li>
+              <li><input type="checkbox" name="brown" value="color" />Brown</li>
+            </ul>
+          </div>
+          <div class="showMore"><span>+</span> Show More</div>
+          <br>
+          <div>
+            Can be personalized
+            <ul>
+              <li>
+                <input type="checkbox" name="yes" value="personalizedYN" />Yes
+              </li>
+              <li>
+                <input type="checkbox" name="biw" value="personalizedYN" />No
+              </li>
+            </ul>
+          </div>
+          <br>
+          <div>
+            Occasion
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="anniversary"
+                  value="occasion"
+                />Anniversary
+              </li>
+              <li>
+                <input type="checkbox" name="babyShower" value="occasion" />Baby
+                shower
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="bachelorParty"
+                  value="occasion"
+                />Bachelor party
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="bacheloretteParty"
+                  value="occasion"
+                />Bachelorette party
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="birthday"
+                  value="occasion"
+                />Birthday
+              </li>
+            </ul>
+          </div>
+          <div class="showMore"><span>+</span> Show More</div>
+          <br>
+          <div>
+            Holiday
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="christmas"
+                  value="holiday"
+                />Christmas
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="cincoDeMayo"
+                  value="holiday"
+                />Cinco de Mayo
+              </li>
+              <li>
+                <input type="checkbox" name="easter" value="holiday" />Easter
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="fathersDay"
+                  value="holiday"
+                />Father's Day
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="halloween"
+                  value="holiday"
+                />Halloween
+              </li>
+            </ul>
+          </div>
+          <div class="showMore"><span>+</span> Show More</div>
+          <br>
+          <div>
+            Shop location
+            <ul>
+              <li>
+                <input type="radio" name="anywhere" value="location" />Anywhere
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="unitedStates"
+                  value="location"
+                />United States
+              </li>
+              <li>
+                <input type="radio" name="custom" value="location" />Custom
+              </li>
+            </ul>
+          </div>
+          <div class="enterLocation">
+            <input type="text" placeholder="Enter Location" />
+            <span>></span>
+          </div>
+          <br>
+          <div>
+            Item type
+            <ul>
+              <li>
+                <input type="radio" name="anywhere" value="type" />All items
+              </li>
+              <li>
+                <input type="radio" name="unitedStates" value="type" />Handmade
+              </li>
+              <li><input type="radio" name="custom" value="type" />Vintage</li>
+            </ul>
+          </div>
+          <br>
+          <div>
+            Ordering options
+            <ul>
+              <ul>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="etsyCards"
+                    value="ordering"
+                  />Accepts Etsy gift cards
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="giftWrapped"
+                    value="ordering"
+                  />Can be gift-wrapped
+                </li>
+                <li>
+                  <input type="checkbox" name="customizable" value="ordering" />Customizable
+                </li>
+            </ul>
+            <br>
+            <div class="shipTo">Ship to
+              <br>
+              <select>
+                <option value="country">United States</option>
+                <option value="country">Australia</option>
+                <option value="country">Canada</option>
+                <option value="country">France</option>
+              </select>
+            </div>
+          </div>
         </div>
-        <div>Price ($)
-          <ul>
-            <li>Any price</li>
-            <li>Under $25</li>
-            <li>$25 to $75</li>
-            <li>$75 to $100</li>
-            <li>Over $100</li>
-            <li>Custom</li>
-          </ul>
+        <div class="toBuy">
+          <div class="displayAbove">
+            <div>
+            <p class="allCategories">ALSKDJFSDLKJFKJLASDFLKJSADLJFAKSLFL</p></div>
+            <div>
+            <p class="sortBy">a;sljka;sdkfja;lsdjkf;alkd</p></div>
+          </div>
+          <div class=products>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          <div class="productDisplay">
+            <img src="https://placehold.it/200" />
+            <div class="desricption"></div>
+            <p class="title">Some Title</p>
+            <p class="price">$12.00</p>
+          </div>
+          </div>
+        </div>
       </div>
-      <div>Low to High</div></br>
-      </div>
-      <div>Material
-        <ul>
-          <li>Ceramic</li>
-          <li>Cork</li>
-          <li>Fabric</li>
-          <li>Glass</li>
-          <li>Metal</li>
-        </ul>
-    </div>
-    <div>Show More</div></br>
-    <div>Color
-      <ul>
-        <li>Beige</li>
-        <li>Black</li>
-        <li>Blue</li>
-        <li>Bronze</li>
-        <li>Brown</li>
-      </ul>
-  </div>
-  <div>Show More</div></br>
-  <div>Can be personalized
-    <ul>
-      <li>Yes</li>
-      <li>No</li>
-    </ul>
-</div>
-<div>Occasion
-  <ul>
-    <li>Anniversary</li>
-    <li>Baby Shower</li>
-    <li>Bachelor party</li>
-    <li>Bachelorette party</li>
-    <li>Birthday</li>
-  </ul>
-</div>
-<div>Show More</div></br>
-<div>Holiday
-  <ul>
-    <li>Christmas</li>
-    <li>Cinco de Mayo</li>
-    <li>Easter</li>
-    <li>Father's Day</li>
-    <li>Halloween</li>
-  </ul>
-</div>
-<div>Shop location
-  <ul>
-    <li>Anywhere</li>
-    <li>United States</li>
-    <li>Custom</li>
-  </ul>
-</div>
-<div>Enter location</div></br>
-<div>Item type
-  <ul>
-    <li>All items</li>
-    <li>Handmade</li>
-    <li>Vintage</li>
-  </ul>
-</div>
-<div>Ordering options
-  <ul>
-    <li>Accepts Etsy gift cards</li>
-    <li>Can be gift-wrapped</li>
-    <li>Customizable</li>
-  </ul>
-  <div>Ship to</div>
-</div>
-</div>
-<div class="toBuy">
-  <div class="productDisplay">
-    <img src="https://placehold.it/200"/>
-    <div class="desricption"></div>
-    <p class="title">Some Title</p>
-    <p class="price">$12.00</p>
-  </div>
-  <div class="productDisplay">
-    <img src="https://placehold.it/200"/>
-    <div class="desricption"></div>
-    <p class="title">Some Title</p>
-    <p class="price">$12.00</p>
-  </div>
-  <div class="productDisplay">
-    <img src="https://placehold.it/200"/>
-    <div class="desricption"></div>
-    <p class="title">Some Title</p>
-    <p class="price">$12.00</p>
-  </div>
-  <div class="productDisplay">
-    <img src="https://placehold.it/200"/>
-    <div class="desricption"></div>
-    <p class="title">Some Title</p>
-    <p class="price">$12.00</p>
-  </div>
-  <div class="productDisplay">
-    <img src="https://placehold.it/200"/>
-    <div class="desricption"></div>
-    <p class="title">Some Title</p>
-    <p class="price">$12.00</p>
-  </div>
-  <div class="productDisplay">
-    <img src="https://placehold.it/200"/>
-    <div class="desricption"></div>
-    <p class="title">Some Title</p>
-    <p class="price">$12.00</p>
-  </div>
-  <div class="productDisplay">
-    <img src="https://placehold.it/200"/>
-    <div class="desricption"></div>
-    <p class="title">Some Title</p>
-    <p class="price">$12.00</p>
-  </div>
-  <div class="productDisplay">
-    <img src="https://placehold.it/200"/>
-    <div class="desricption"></div>
-    <p class="title">Some Title</p>
-    <p class="price">$12.00</p>
-  </div>
-  <div class="productDisplay">
-    <img src="https://placehold.it/200"/>
-    <div class="desricption"></div>
-    <p class="title">Some Title</p>
-    <p class="price">$12.00</p>
-  </div>
-  <div class="productDisplay">
-    <img src="https://placehold.it/200"/>
-    <div class="desricption"></div>
-    <p class="title">Some Title</p>
-    <p class="price">$12.00</p>
-  </div>
-  <div class="productDisplay">
-    <img src="https://placehold.it/200"/>
-    <div class="desricption"></div>
-    <p class="title">Some Title</p>
-    <p class="price">$12.00</p>
-  </div>
-  <div class="productDisplay">
-    <img src="https://placehold.it/200"/>
-    <div class="desricption"></div>
-    <p class="title">Some Title</p>
-    <p class="price">$12.00</p>
-  </div>
-</div>
-</div>
-
-      
 
       <script src="items.js"></script>
       <script src="main.js"></script>

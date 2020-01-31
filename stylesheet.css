@@ -6,6 +6,9 @@ html {
 *::after {
   box-sizing: inherent;
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .wrapper1 {
   width: 1300px;
   margin: auto;
@@ -59,6 +62,7 @@ header > p {
 .navBar a {
   color: black;
   text-decoration: none;
+  font-size: 0.75em;
 }
 .borderLine {
   border-bottom: 2px solid gray;
@@ -82,28 +86,101 @@ header > p {
   background-color: rgb(256, 146, 111);
   padding: 10px 19px 10px 19px;
   border-radius: 35px;
-  font-size: 0.9em;
+  font-size: 0.75em;
 }
 .flexParent {
   display: flex;
+  margin-top: 30px;
 }
 .sideBar {
   width: 200px;
-  border: 1px solid black;
+  font-size: 0.85em;
+  font-weight: 450;
+}
+.sideBar ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.sideBar li {
+  font-size: 1em;
+  color: rgb(90, 90, 90);
+  font-weight: 250;
+  list-style-type: none;
+  line-height: 25px;
 }
 .allCats li {
-  color: black;
-  list-style-type: none;
+  padding-left: 20px;
+}
+.showMore span {
+  font-size: 1.85em;
+}
+.priceRange {
+  display: flex;
+  justify-content: center;
+}
+.priceRange span {
+  font-size: 2.5em;
+  padding-left: 15px;
+}
+.priceRange p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.priceRange input {
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+.priceRange > ::placeholder {
+  font-size: 0.75em;
+  color: gray;
+  text-align: center;
+}
+.enterLocation {
+  display: flex;
+  justify-content: center;
+}
+.enterLocation input {
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 83%);
+}
+.enterLocation > ::placeholder {
+  font-size: 0.75em;
+  color: gray;
+  text-align: center;
+}
+.enterLocation span {
+  font-size: 2.5em;
+  padding-left: 15px;
+}
+.shipTo select {
+  width: 160px;
+  height: 25px;
 }
 .toBuy {
   flex-grow: 2;
+}
+.products {
   border: 1px solid black;
   display: grid;
+  justify-items: space-between;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.displayAbove {
+  display: flex;
+  justify-content: space-between;
 }
 .icon {
   display: inline-block;
   fill: black;
   width: 20px;
   height: 20px;
+}
+.productDisplay {
+}
+.desricption {
 }
