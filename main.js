@@ -10,9 +10,11 @@ let html = items.results
     }
     return `
       <a href=""><div class="productDisplay">
+        <button class="heartButton"><img id="heart" src="assets/heart.png" /></button>
         <img src="${item.Images[0].url_170x135}" />
         <div class="desricption"></div>
         <p class="title">${item.title}</p>
+        <p class="shop_name">${item.Shop.shop_name}</p>
         <p class="price">${eur}${item.price}</p>
       </div></a>`
   })

@@ -9,6 +9,10 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 .wrapper1 {
   width: 1300px;
   margin: auto;
@@ -18,8 +22,7 @@ body {
   margin: auto;
 }
 header {
-  display: grid;
-  grid-template-columns: 80px 8fr 1fr 1fr;
+  display: flex;
   justify-content: space-between;
   padding-top: 0;
   padding-bottom: 0;
@@ -28,6 +31,8 @@ header {
   border: 1px solid rgb(194 194 194);
   border-radius: 35px;
   padding-left: 22px;
+  flex-grow: 2;
+  margin-left: 15px;
 }
 ::placeholder {
   font-size: 1.5em;
@@ -42,16 +47,15 @@ header {
   font-family: "Times New Roman", Times, serif;
   font-weight: 300;
 }
-header > p {
-  font-family: Helvetica, arial;
-  justify-self: end;
-  align-self: center;
+#signIn {
   font-size: 0.85em;
-  font-weight: bold;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 #cart {
-  justify-self: end;
-  align-self: center;
+  height: 30px;
+  width: 30px;
+  padding-top: 12px;
 }
 .navBar {
   display: flex;
@@ -167,7 +171,7 @@ header > p {
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 35px;
+  grid-column-gap: 25px;
 }
 .products .title {
   justify-self: left;
@@ -175,14 +179,33 @@ header > p {
   width: 260px;
   white-space: nowrap;
   overflow: hidden;
+  font-size: 0.75em;
 }
 .products img {
   width: 260px;
   height: 260px;
 }
+#heart {
+  width: 10px;
+  height: 12px;
+}
+.heartButton {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: 1;
+}
+.products .price {
+  font-size: 0.75em;
+}
+.shop_name {
+  font-size: 0.6em;
+}
 .displayAbove {
   display: flex;
   justify-content: space-between;
+  font-size: 0.75em;
 }
 .sortBy:after {
   content: "";
@@ -192,8 +215,8 @@ header > p {
   border-width: 6px 3.5px 0 3.5px;
   border-color: #000000 transparent transparent transparent;
   position: absolute;
-  top: 7px;
-  left: 135px;
+  top: 5px;
+  left: 100px;
 }
 .sortBy {
   position: relative;
