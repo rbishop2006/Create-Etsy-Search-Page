@@ -165,14 +165,39 @@ header > p {
   flex-grow: 2;
 }
 .products {
-  border: 1px solid black;
   display: grid;
-  justify-items: space-between;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 35px;
+}
+.products .title {
+  justify-self: left;
+  text-overflow: ellipsis;
+  width: 260px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.products img {
+  width: 260px;
+  height: 260px;
 }
 .displayAbove {
   display: flex;
   justify-content: space-between;
+}
+.sortBy:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 3.5px 0 3.5px;
+  border-color: #000000 transparent transparent transparent;
+  position: absolute;
+  top: 7px;
+  left: 135px;
+}
+.sortBy {
+  position: relative;
+  margin-right: 15px;
 }
 .icon {
   display: inline-block;
