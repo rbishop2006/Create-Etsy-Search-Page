@@ -10,7 +10,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 a {
-  text-decoration: none;
   color: black;
 }
 .wrapper1 {
@@ -21,25 +20,52 @@ a {
   width: 1300px;
   margin: auto;
 }
-header {
+.header {
   display: flex;
-  justify-content: space-between;
   padding-top: 0;
   padding-bottom: 0;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header a {
+  text-decoration: none;
+}
+.searchBarWrapper {
+  display: flex;
+  flex-grow: 2;
+  border: 1px solid lightgray;
+  border-right: none;
+  margin-left: 30px;
+  border-radius: 35px 0 0 35px;
+  background-color: rgb(236, 236, 236);
+  justify-content: flex-end;
+  align-items: center;
+}
+.searchBarWrapper:hover {
+  border: 1px solid gray;
+  border-right: none;
+  transition: 0.3s;
 }
 .searchTop {
-  border: 1px solid rgb(194 194 194);
-  border-radius: 35px;
-  padding-left: 22px;
-  flex-grow: 2;
-  margin-left: 15px;
+  padding-left: 35px;
+  letter-spacing: 1.5px;
+  flex-grow: 1;
 }
-::placeholder {
-  font-size: 1.5em;
-  color: black;
+#xIcon {
+  width: 25px;
+  height: 25px;
+  background: rgb(236, 236, 236);
+}
+#magGlass {
+  width: 25px;
+  height: 25px;
+  background: hidden;
+}
+.wrapper1 header a {
+  text-decoration: none;
 }
 #etsyLogo {
-  justify-self: start;
   font-size: 2.5em;
   margin-top: 0;
   margin-bottom: 0;
@@ -47,15 +73,30 @@ header {
   font-family: "Times New Roman", Times, serif;
   font-weight: 300;
 }
-#signIn {
-  font-size: 0.85em;
-  margin-left: 25px;
-  margin-right: 25px;
+.signIn {
+  justify-self: flex-end;
+  font-size: 0.75em;
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  border-radius: 35px;
+  margin-right: 15px;
+}
+.signIn:hover {
+  background-color: rgb(236, 236, 236);
+  transition: 0.3s;
 }
 #cart {
   height: 30px;
   width: 30px;
-  padding-top: 12px;
+  border-radius: 75%;
+  padding: 10px;
+  margin-top: 10px;
+}
+#cart:hover {
+  background-color: rgb(236, 236, 236);
+  transition: 0.3s;
 }
 .navBar {
   display: flex;
@@ -87,17 +128,23 @@ header {
 .similarItems a {
   color: black;
   text-decoration: none;
-  background-color: rgb(256, 146, 111);
+  background-color: rgb(300, 150, 100);
   padding: 10px 19px 10px 19px;
   border-radius: 35px;
   font-size: 0.75em;
+}
+.similarItems a:hover {
+  background-color: rgb(256, 146, 111);
+}
+.similarItems li:hover {
+  transform: scale(1.03);
 }
 .flexParent {
   display: flex;
   margin-top: 30px;
 }
 .sideBar {
-  width: 200px;
+  width: 220px;
   font-size: 0.85em;
   font-weight: 450;
 }
@@ -116,8 +163,113 @@ header {
 .allCats li {
   padding-left: 20px;
 }
-.showMore span {
+.allCats a {
+  text-decoration: none;
+}
+.allCats a:hover {
+  text-decoration: underline;
+  color: lightgray;
+  transition: 0.3s;
+}
+.showMore a {
+  text-decoration: none;
+}
+.showMore span a {
+  text-decoration: none;
   font-size: 1.85em;
+}
+.showMore a:hover {
+  text-decoration: underline;
+  color: lightgray;
+  transition: 0.3s;
+}
+.specialOffers a {
+  text-decoration: none;
+}
+.specialOffers a:hover {
+  text-decoration: underline;
+  color: lightgray;
+  transition: 0.3s;
+}
+.readyToShip a {
+  text-decoration: none;
+}
+.readyToShip a:hover {
+  text-decoration: underline;
+  color: lightgray;
+  transition: 0.3s;
+}
+.priceSideBar a {
+  text-decoration: none;
+}
+.priceSideBar a:hover {
+  text-decoration: underline;
+  color: lightgray;
+  transition: 0.3s;
+}
+.material a {
+  text-decoration: none;
+}
+.material a:hover {
+  text-decoration: underline;
+  color: lightgray;
+  transition: 0.3s;
+}
+.color a {
+  text-decoration: none;
+}
+.color a:hover {
+  text-decoration: underline;
+  color: lightgray;
+  transition: 0.3s;
+}
+.canBeP a {
+  text-decoration: none;
+}
+.canBeP a:hover {
+  text-decoration: underline;
+  color: lightgray;
+  transition: 0.3s;
+}
+.occassion a {
+  text-decoration: none;
+}
+.occassion a:hover {
+  text-decoration: underline;
+  color: lightgray;
+  transition: 0.3s;
+}
+.holiday a {
+  text-decoration: none;
+}
+.holiday a:hover {
+  text-decoration: underline;
+  color: lightgray;
+  transition: 0.3s;
+}
+.shopLocation a {
+  text-decoration: none;
+}
+.shopLocation a:hover {
+  text-decoration: underline;
+  color: lightgray;
+  transition: 0.3s;
+}
+.itemType a {
+  text-decoration: none;
+}
+.itemType a:hover {
+  text-decoration: underline;
+  color: lightgray;
+  transition: 0.3s;
+}
+.orderingOptions a {
+  text-decoration: none;
+}
+.orderingOptions a:hover {
+  text-decoration: underline;
+  color: lightgray;
+  transition: 0.3s;
 }
 .priceRange {
   display: flex;
@@ -125,7 +277,15 @@ header {
 }
 .priceRange span {
   font-size: 2.5em;
-  padding-left: 15px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 40px;
+  margin-left: 10px;
+}
+.priceRange span:hover {
+  background-color: rgb(236, 236, 236);
+  transition: 0.3s;
 }
 .priceRange p {
   margin-left: 5px;
@@ -136,6 +296,10 @@ header {
   height: 25px;
   border-radius: 5px;
   border: 1px solid lightgray;
+}
+.priceRange input:hover {
+  border: 1px solid gray;
+  transition: 0.3s;
 }
 .priceRange > ::placeholder {
   font-size: 0.75em;
@@ -152,6 +316,10 @@ header {
   border-radius: 5px;
   border: 1px solid hsl(0, 0%, 83%);
 }
+.enterLocation input:hover {
+  border: 1px solid gray;
+  transition: 0.3s;
+}
 .enterLocation > ::placeholder {
   font-size: 0.75em;
   color: gray;
@@ -159,11 +327,43 @@ header {
 }
 .enterLocation span {
   font-size: 2.5em;
-  padding-left: 15px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 40px;
+  margin-left: 10px;
+}
+.enterLocation span:hover {
+  background-color: rgb(236, 236, 236);
+  transition: 0.3s;
+}
+.shipTo {
+  position: relative;
+}
+.shipTo::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 2.5px 0 2.5px;
+  border-color: #808080 transparent transparent transparent;
+  top: 40px;
+  right: 35px;
+  position: absolute;
+  opacity: 0.5;
 }
 .shipTo select {
   width: 160px;
-  height: 25px;
+  height: 35px;
+  margin-top: 10px;
+  padding-left: 20px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  color: gray;
+}
+.shipTo select:hover {
+  border: 1px solid gray;
+  transition: 0.3s;
 }
 .toBuy {
   flex-grow: 2;
@@ -172,6 +372,10 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 25px;
+  text-decoration: none;
+}
+.products a {
+  text-decoration: none;
 }
 .products .title {
   justify-self: left;
@@ -185,16 +389,10 @@ header {
   width: 260px;
   height: 260px;
 }
-#heart {
-  width: 10px;
-  height: 12px;
-}
-.heartButton {
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  z-index: 1;
+.products img:hover {
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
 }
 .products .price {
   font-size: 0.75em;
@@ -207,6 +405,13 @@ header {
   justify-content: space-between;
   font-size: 0.75em;
 }
+.allCategories2 a {
+  text-decoration: none;
+}
+.allCategories2 a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
 .sortBy:after {
   content: "";
   width: 0;
@@ -215,12 +420,24 @@ header {
   border-width: 6px 3.5px 0 3.5px;
   border-color: #000000 transparent transparent transparent;
   position: absolute;
-  top: 5px;
-  left: 100px;
+  top: 20px;
+  left: 120px;
 }
 .sortBy {
   position: relative;
   margin-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 35px;
+}
+.sortBy:hover {
+  background-color: rgb(236, 236, 236);
+  transition: 0.3s;
+}
+.sortBy a {
+  text-decoration: none;
 }
 .icon {
   display: inline-block;
