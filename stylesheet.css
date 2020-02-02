@@ -171,6 +171,15 @@ a {
   color: lightgray;
   transition: 0.3s;
 }
+.showMore {
+  width: 90px;
+  padding: 10px;
+  border-radius: 35px;
+}
+.showMore:hover {
+  background-color: rgb(236, 236, 236);
+  transition: .3s;
+}
 .showMore a {
   text-decoration: none;
 }
@@ -178,10 +187,10 @@ a {
   text-decoration: none;
   font-size: 1.85em;
 }
-.showMore a:hover {
+/* .showMore a:hover {
   text-decoration: underline;
   color: lightgray;
-  transition: 0.3s;
+  transition: 0.3s; */
 }
 .specialOffers a {
   text-decoration: none;
@@ -390,9 +399,9 @@ a {
   height: 260px;
 }
 .products img:hover {
-  -moz-box-shadow: 0 0 3px #ccc;
-  -webkit-box-shadow: 0 0 3px #ccc;
-  box-shadow: 0 0 3px #ccc;
+  -moz-box-shadow: 0 0 3px gray;
+  -webkit-box-shadow: 0 0 3px gray;
+  box-shadow: 0 0 3px gray;
 }
 .products .price {
   font-size: 0.75em;
