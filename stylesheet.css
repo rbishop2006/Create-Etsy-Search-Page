@@ -39,7 +39,8 @@ a {
   border-right: none;
   margin-left: 30px;
   border-radius: 35px 35px 35px 35px;
-  background-color: rgb(236, 236, 236);
+  background-color: lightgray;
+  opacity: 0.7;
   justify-content: flex-end;
   align-items: center;
 }
@@ -49,9 +50,18 @@ a {
   transition: 0.3s;
 }
 .searchTop {
-  padding-left: 35px;
-  letter-spacing: 1.5px;
+  margin-left: 35px;
+  background: transparent;
+  border: none;
   flex-grow: 1;
+}
+.searchTop:focus {
+  outline: none;
+  color: black;
+}
+.searchTop::placeholder {
+  font-size: 1.5em;
+  color: black;
 }
 #xIcon {
   width: 25px;
@@ -60,7 +70,7 @@ a {
   border-radius: 50%;
 }
 #xIcon:hover {
-  background: lightgray;
+  background: gray;
   transition: 0.3s;
 }
 #magGlass {
@@ -71,7 +81,7 @@ a {
   margin-right: 1px;
 }
 #magGlass:hover {
-  background: lightgray;
+  background: gray;
   transition: 0.3s;
 }
 
@@ -95,6 +105,7 @@ a {
   padding-bottom: 5px;
   border-radius: 35px;
   margin-right: 15px;
+  margin-left: 15px;
 }
 .signIn:hover {
   background-color: lightgray;
@@ -417,6 +428,9 @@ a {
   white-space: nowrap;
   overflow: hidden;
   font-size: 0.75em;
+}
+.products .shop_name {
+  color: darkgrey;
 }
 .products img {
   width: 260px;

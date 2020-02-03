@@ -9,7 +9,7 @@ let html = items.results
       eur += "&euro;"
     }
     return `
-        <a href=""><div class="productDisplay">
+        <a href="${item.url}"><div class="productDisplay">
         <img src="${item.Images[0].url_170x135}"  />
         <div class="desricption"></div>
         <p class="title">${item.title}</p>
