@@ -436,6 +436,8 @@ a {
   width: 260px;
   height: 260px;
   border-radius: 3px;
+  background-image: url(assets/heart.png);
+  background-size: 25px;
 }
 .products img:hover {
   -moz-box-shadow: 0 0 3px gray;
